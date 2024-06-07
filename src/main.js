@@ -7,6 +7,9 @@ import './assets/css/global.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUser, faPersonBiking, faAddressBook, faLock, faPersonSwimming, faCartShopping, faBook, faFire, faBowlRice, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+//not sure
+// import { reactive, ref } from 'vue'
+// import type { ComponentSize, FormInstance, FormRules } from 'element-plus'
 
 // 導入axios
 import axios from 'axios';

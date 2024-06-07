@@ -1,5 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
-  transpileDependencies: true
+  transpileDependencies: true,
+  // include: /node_modules/,
+  // type: "javascript/auto"
 })
