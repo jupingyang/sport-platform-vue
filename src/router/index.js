@@ -4,6 +4,8 @@ import Login from '../components/Login.vue'
 import Home from '../components/Home.vue'
 import Welcome from '../components/Welcome.vue'
 import UserList from '../components/admin/UserList.vue'
+import Food from '../components/Food.vue'
+import Calories from '../components/Calories.vue'
 
 const routes = [
   {
@@ -20,7 +22,9 @@ const routes = [
     redirect:"/welcome",
     children:[
       {path:"/welcome",component: Welcome,},
-      {path:"/user",component: UserList,}
+      {path:"/user",component: UserList,},
+      {path:"/food",component: Food,},
+      {path:"/calories",component: Calories,},
     ]
   }
 ]

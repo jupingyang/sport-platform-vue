@@ -7,9 +7,7 @@ import './assets/css/global.css'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUser, faPersonBiking, faAddressBook, faLock, faPersonSwimming, faCartShopping, faBook, faFire, faBowlRice, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-//not sure
-// import { reactive, ref } from 'vue'
-// import type { ComponentSize, FormInstance, FormRules } from 'element-plus'
+
 
 // 導入axios
 import axios from 'axios';
@@ -27,3 +25,24 @@ app.use(ElementPlus)
 app.component("FontAwesomeIcon", FontAwesomeIcon)
 app.mount('#app')
 app.config.globalProperties.$axios = axios;
+
+//ResizeObserver loop limit exceeded // el-table出錯
+const debounce = (fn,delay) => {
+    let timer = null;
+    return function(){
+        let context = this;
+        let args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(function (){
+            fn.apply(context, args);
+        }, delay);
+    }
+}
+
+const _ResizeObserver = window.ResizeObserver;
+window.ResizeObserver = class ResizeObserver extends _ResizeObserver{
+    constructor(callback){
+        callback = debounce(callback, 16);
+        super(callback);
+    }
+}

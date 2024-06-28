@@ -1,8 +1,8 @@
 <template>
-    <div>用戶列表
+    <div>
         <!-- 麵包屑導航 -->  
         <!-- <el-breadcrumb :separator-icon="ArrowRight" >     -->
-        <el-breadcrumb separator="❯" ><!-- 〉﹥＞ ❭ ❯ ❱ ⟩  -->
+        <el-breadcrumb separator="〉" ><!-- 〉﹥＞ ❭ ❯ ❱ ⟩  -->
             <el-breadcrumb-item :to="{ path:'/home'}">首頁</el-breadcrumb-item>
             <el-breadcrumb-item>權限管理</el-breadcrumb-item>    
             <el-breadcrumb-item>用戶列表</el-breadcrumb-item>
@@ -15,7 +15,7 @@
                 <el-col :span="10">
                     <el-input placeholder="請輸入搜尋內容" v-model="queryInfo.query" clearable @clear="getUserList"> 
                         <template #append>
-                            <el-icon @click="getUserList"><Search /></el-icon>
+                            <el-icon @click="getUserList" style="cursor: pointer;"><Search /></el-icon>
                         </template>
                     </el-input> 
                 </el-col>
@@ -212,7 +212,8 @@ export default {
         // 獲取用戶列表 
         async getUserList(){
             const {data:res} = await this.$axios.get("http://localhost:9000/allUser", {params:this.queryInfo});
-            this.userList = res.data;// 用戶列表數據封裝
+            console.log(res);
+            this.userList = res.data;// 用戶列表數據封裝((
             this.total = res.numbers;// 總用戶數
         },
         // 顯示記錄條數發生變化

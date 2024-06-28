@@ -72,7 +72,7 @@ export default{
                 if( !valid ) return;// 驗證失敗
                 const res = await this.$axios.post("http://localhost:9000/login",this.loginForm);// 訪問後端
                 // console.log(res);
-                if( res.data.flag == "ok"){
+                if( res.data.flag == "success"){
                     this.$message.success("操作成功!");// 訊息提示
                     this.$router.push({path:"/home"});// 頁面路由跳轉
                     // console.log(res.data.user);
