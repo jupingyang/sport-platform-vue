@@ -5,5 +5,5 @@ module.exports = defineConfig({
   // publicPath: process.env.NODE_ENV === 'production'
   //   ? '/sport-platform-vue/'
   //   : '/'
-  publicPath: '/sport-platform-vue/docs/',
+  publicPath: '/sport-platform-vue/dist/',
 })
