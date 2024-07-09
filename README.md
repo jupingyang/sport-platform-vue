@@ -9,7 +9,7 @@
 * 前端部署於 github pages：https://jupingyang.github.io/sport-platform-vue/dist/
 * 後端部署於 GCP：https://still-lamp-428409-b4.de.r.appspot.com/menus ( 獲取所有菜單 )
 
-### 使用技術
+### 前端使用技術
 * vue.js：建立前端架構 
 * async/await：處理非同步請求<br>  
 * element plus/font awesome：美化框架
