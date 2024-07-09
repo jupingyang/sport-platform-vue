@@ -1,19 +1,19 @@
-# 個人運動平台 ( 前端 vue.js + 後端 springboot )
+# 個人運動平台 ( 前端 Vue.js + 後端 Spring Boot )
 
 ### 專案簡介
  【個人健康平台】旨在提供使用者查詢各類運動可消耗的卡路里及各類食物的營養標示，以達到增肌減脂的營養目標。
  後台管理者能夠透過後台管理系統來管理已註冊會員。
- > 此專案為筆者參考 bilibili影片《个人健康平台》以 springboot + vue3 重構而成。
+ > 此專案為筆者參考 bilibili影片《个人健康平台》以 Spring Boot + Vue3 重構而成。
 
 ### 雲端部署
-* 前端部署於 github pages：https://jupingyang.github.io/sport-platform-vue/dist/
+* 前端部署於 Github Pages：https://jupingyang.github.io/sport-platform-vue/dist/
 * 後端部署於 GCP：https://still-lamp-428409-b4.de.r.appspot.com/menus ( 獲取所有菜單 )
 
 ### 前端使用技術
-* vue.js：建立前端架構 
-* async/await：處理非同步請求<br>  
-* element plus/font awesome：美化框架
-* github pages：部署靜態頁面
+* Vue.js：建立前端架構 
+* Async/Await：處理非同步請求
+* Element Plus/Font Awesome：美化框架
+* Github Pages：部署靜態頁面
 
 ### 介面與功能
 #### 前台：
