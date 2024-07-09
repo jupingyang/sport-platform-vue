@@ -15,7 +15,7 @@
 * Element Plus/Font Awesome：美化框架
 * Github Pages：部署靜態頁面
 
-### 後端專案連結
+### 後端 Spring Boot 專案連結
 https://github.com/jupingyang/sport-platform
 
 ### 介面與功能
