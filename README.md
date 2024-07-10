@@ -12,6 +12,7 @@
 ### 前端使用技術
 * Vue.js：建立前端架構 
 * Async/Await：處理非同步請求
+* 使用axios與後端API介接
 * Element Plus/Font Awesome：美化框架
 * Github Pages：部署靜態頁面
 
